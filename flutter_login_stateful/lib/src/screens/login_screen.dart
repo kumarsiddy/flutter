@@ -8,7 +8,7 @@ class LoginScreen extends StatefulWidget {
   }
 }
 
-class LoginState extends State<LoginScreen> with ValidationMixin{
+class LoginState extends State<LoginScreen> with ValidationMixin {
   final formKey = GlobalKey<FormState>();
   String email = '';
   String password = '';
