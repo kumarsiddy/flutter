@@ -3,7 +3,6 @@ import 'dart:async';
 class Validators {
   final emailValidator =
       StreamTransformer<String, String>.fromHandlers(handleData: (email, sink) {
-    print(email);
     if (email.length > 4 && email.contains("@")) {
       sink.add(email);
     } else {

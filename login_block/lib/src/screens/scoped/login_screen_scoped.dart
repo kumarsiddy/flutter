@@ -62,13 +62,9 @@ class LoginScreenScoped extends StatelessWidget {
           child: Text("Submit"),
           color: Colors.green,
           textColor: Colors.white,
-          onPressed: snapshot.hasError ? null : onSubmitButtonClick,
+          onPressed: snapshot.hasData ? blocScoped.onSubmit : null,
         );
       },
     );
-  }
-
-  void onSubmitButtonClick() {
-    print("Do Whatever you want on this button click!!");
   }
 }
