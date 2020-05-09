@@ -4,7 +4,7 @@ class Validators {
   final emailValidator =
       StreamTransformer<String, String>.fromHandlers(handleData: (email, sink) {
     print(email);
-    if (email.contains("@")) {
+    if (email.length > 4 && email.contains("@")) {
       sink.add(email);
     } else {
       sink.addError("Please enter valid email!");

@@ -14,7 +14,7 @@ class LoginScreenScoped extends StatelessWidget {
           getEmailField(blocScoped),
           getPasswordField(blocScoped),
           Container(margin: EdgeInsets.only(bottom: 8.0)),
-          getSubmitButton(),
+          getSubmitButton(blocScoped),
         ],
       ),
     );
@@ -54,14 +54,21 @@ class LoginScreenScoped extends StatelessWidget {
     );
   }
 
-  Widget getSubmitButton() {
-    return RaisedButton(
-      child: Text("Submit"),
-      color: Colors.green,
-      textColor: Colors.white,
-      onPressed: onSubmitButtonClick,
+  Widget getSubmitButton(BlocScoped blocScoped) {
+    return StreamBuilder(
+      stream: blocScoped.validateFormStream,
+      builder: (context, snapshot) {
+        return RaisedButton(
+          child: Text("Submit"),
+          color: Colors.green,
+          textColor: Colors.white,
+          onPressed: snapshot.hasError ? null : onSubmitButtonClick,
+        );
+      },
     );
   }
 
-  void onSubmitButtonClick() {}
+  void onSubmitButtonClick() {
+    print("Do Whatever you want on this button click!!");
+  }
 }
