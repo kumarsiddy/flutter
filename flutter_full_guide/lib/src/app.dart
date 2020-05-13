@@ -30,7 +30,7 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('This is title'),
+          title: Text('Jeevika_setu'),
         ),
         body: ImageList(images),
         floatingActionButton: FloatingActionButton(
