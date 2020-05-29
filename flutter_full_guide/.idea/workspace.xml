@@ -4,7 +4,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c56c3cbd-5409-4488-9c6a-53c8bfa104fe" name="Default Changelist" comment="" />
+    <list default="true" id="c56c3cbd-5409-4488-9c6a-53c8bfa104fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../flutter_async_redux/lib/src/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flutter_sqlite/lib/src/flutter_sqlite_app.dart" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunDashboard">
