@@ -7,3 +7,17 @@ class AddToDoAction {
 }
 
 enum VisibilityFilter { showAll, showActive, showCompleted }
+
+class FetchToDoAction {}
+
+class FetchToDoSucceedAction {
+  final List<ToDo> fetchedToDos;
+
+  FetchToDoSucceedAction(this.fetchedToDos);
+}
+
+class FetchToDoFailedAction {
+  final Exception error;
+
+  FetchToDoFailedAction(this.error);
+}
