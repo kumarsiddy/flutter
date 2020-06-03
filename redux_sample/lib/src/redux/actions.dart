@@ -18,6 +18,5 @@ class FetchToDoSucceedAction {
 
 class FetchToDoFailedAction {
   final Exception error;
-
   FetchToDoFailedAction(this.error);
 }
